@@ -1,0 +1,145 @@
+parameters:
+  app_id:
+    name: AppId
+    description: AppId field
+    in: header
+    required: true
+    type: string
+    enum:
+      - nh(DyBAlOlVWugK_ezmqN!qEHBiKYVF)
+
+  refresh_token:
+    name: refresh_token
+    description: refresh_token field
+    in: formData
+    required: true
+    type: string
+
+  grant_type_password:
+    name: grant_type
+    description: grant_type field
+    in: formData
+    required: true
+    type: string
+    enum:
+      - password
+
+  grant_type_refresh_token:
+    name: grant_type
+    description: grant_type field
+    in: formData
+    required: true
+    type: string
+    enum:
+      - refresh_token
+
+  client_id:
+    name: client_id
+    description: client_id field
+    in: formData
+    required: true
+    type: string
+    enum:
+      - sdhjshj74hduh7cnu3n$2enjn@
+
+  username:
+    name: username
+    description: Username field
+    in: formData
+    required: true
+    type: string
+
+  username_path:
+    name: username
+    description: Username field
+    in: path
+    required: true
+    type: string
+
+  username_query:
+    name: username
+    description: Username field
+    in: query
+    required: true
+    type: string
+
+  password:
+    name: password
+    description: Password field
+    in: formData
+    required: true
+    type: string
+
+  email:
+    name: email
+    description: email field
+    in: formData
+    required: true
+    type: string
+
+  country_code:
+    name: country_code
+    description: country_code field
+    in: formData
+    required: true
+    type: integer
+
+  country_code_query:
+    name: country_code
+    description: country_code field
+    in: query
+    required: true
+    type: integer
+
+  phone_number:
+    name: phone_number
+    description: phone_number field
+    in: formData
+    required: true
+    type: integer
+
+  phone_number_query:
+    name: phone_number
+    description: phone_number field
+    in: query
+    required: true
+    type: integer
+
+  new_user_default_0:
+    name: new_user
+    description: new_user field
+    in: formData
+    required: true
+    type: integer
+    enum:
+      - 0
+
+  new_user_default_1:
+    name: new_user
+    description: new_user field
+    in: formData
+    required: true
+    type: integer
+    enum:
+      - 1
+
+  otp_code:
+    name: otp_code
+    description: otp_code field
+    in: formData
+    required: true
+    type: integer
+
+  otp_code_query:
+    name: otp_code
+    description: otp_code field
+    in: query
+    required: true
+    type: integer
+
+  one_time_token_query:
+    name: one_time_token
+    description: one_time_token field
+    in: query
+    required: true
+    type: string

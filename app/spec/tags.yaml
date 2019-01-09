@@ -1,0 +1,13 @@
+tags:
+  - name: Auth
+    description: Authentication endpoints
+  - name: User
+    description: User related endpoints
+  - name: OTP
+    description: Send and verify OTP endpoints
+  - name: Log
+    description: Log data to application
+  - name: Swagger
+    description: Swagger documentation
+  - name: Not for Client (Android/iOS)
+    description: These APIs are meant not to be used by Clients (Android/iOS/web)
