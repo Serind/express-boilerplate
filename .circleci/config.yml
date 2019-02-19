@@ -5,15 +5,15 @@ jobs:
       # specify the version you desire here
       - image: circleci/node:8.14
 
-    working_directory: ~/airmason-slack-bot/
+    working_directory: ~/project-name/
 
     steps:
       - checkout:
-          path: ~/airmason-slack-bot/
+          path: ~/project-name/
 
       - run:
           name: Create env file
-          command: echo $ENV | base64 -d > ~/airmason-slack-bot/.env
+          command: echo $ENV | base64 -d > ~/project-name/.env
 
       # Download and cache dependencies
       - restore_cache:
