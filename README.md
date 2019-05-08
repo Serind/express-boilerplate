@@ -3,7 +3,7 @@
 </div>
 
 <p align="center">
-  Boilerplate for Node.js Express RESTful API application with Swagger, Jest, and Coveralls
+  Boilerplate for Node.js Express RESTful API application with Mongoose, Swagger, Jest, and Coveralls
 </p>
 
 <br />
@@ -32,9 +32,9 @@ $ npm install
 
 ```zsh
 # Run the application for development
-$ npm start
+$ npm run start:dev
 # Run the application in production
-$ npm run start:prod
+$ npm run start
 ```
 
 ### Test
