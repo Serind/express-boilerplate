@@ -3,7 +3,7 @@
 </div>
 
 <p align="center">
-  Boilerplate for Node.js Express RESTful API application with Mongoose, Swagger, Jest, and Coveralls
+  Boilerplate for Node.js Express RESTful API application with MySQL, Swagger, Jest, and Coveralls
 </p>
 
 <br />
