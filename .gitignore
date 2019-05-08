@@ -53,7 +53,7 @@ jspm_packages/
 # yarn.lock
 
 # package.json Lock file
-package-lock.json
+# package-lock.json
 
 ### OSX ###
 *.DS_Store

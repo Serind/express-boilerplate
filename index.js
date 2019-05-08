@@ -1,6 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import morgan from 'morgan';
+import helmet from 'helmet';
 import expressValidator from 'express-validator';
 import cors from 'cors';
 
@@ -10,6 +11,15 @@ import config from './config';
 
 const app = express();
 
+app.use(helmet({
+  dnsPrefetchControl: { allow: true },
+  frameguard: { action: 'deny' },
+  hidePoweredBy: true,
+  hsts: { maxAge: 5184000 },
+  noCache: true,
+  noSniff: true,
+  xssFilter: true
+}));
 app.use(cors());
 app.use(bodyParser.json());        // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({    // to support URL-encoded bodies
